@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -9,4 +9,78 @@ body {
   padding: 0;
 }
 
+:root {
+  --spc--xs: 8px;
+  --spc--sm: 16px;
+  --spc--md: 24px;
+  --spc--lg: 32px;
+  --spc--xl: 48px;
+  --spc--xxl: 64px;
+  --spc--xxxl: 96px;
+  --spc--huge: 128px;
+
+  --white: hsl(0deg, 0%, 100%);
+  --gray-medium: hsl(0deg, 0%, 60%);
+  --gray-dark: hsl(0, 0%, 40%);
+
+  --gold-lighter: hsl(45deg, 100%, 50%);
+  --gold-darker: hsl(45deg, 100%, 40%);
+}
+
 /* Add styles here! */
+
+.max-width-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-chunk {
+  max-width: 1000px;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.title {
+  padding-bottom: 15px;
+}
+
+.intro-chunk p {
+  max-width: 320px;
+}
+
+.card {
+  max-width: 1000px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.intro-chunk strong {
+  color: green;
+}
+
+main {
+  height: 100%;
+  padding-block-start: var(--spc--xl);
+  background-color: var(--gray-dark);
+  box-shadow: 0 -6px 0 0 var(--gray-medium);
+}
+
+main .max-width-wrapper {
+  padding-top: 1px;
+  background-color: var(--white);
+  box-shadow: 0 6px 0 0 var(--gray-medium);
+}
+
+.indented-heading {
+  padding-top: var(--spc--sm);
+  padding-bottom: var(--spc--sm);
+  padding-right: 26px;
+  margin-left: -31px;
+  padding-left: 31px;
+  max-width: fit-content;
+  background-color: var(--gold-lighter);
+  box-shadow: 0 6px 0 0 var(--gold-darker);
+}
